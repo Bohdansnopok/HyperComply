@@ -18,10 +18,12 @@ body {
 
 h1 {
     font-size: 72px;
+    font-weight: 400;
 }
 
 .h1 {
     font-size: 72px;
+    font-weight: 400;
 }
 
 .flex {
@@ -29,7 +31,7 @@ h1 {
 }
 
 .btn {
-    display: inline;
+    display: inline-block;
     color: white;
     font-size: 15px;
     padding: 15px 25px;
@@ -42,3 +44,36 @@ h1 {
 .btn:hover {
     background: red;
 }
+
+.btnCenter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+
+.animation-70 {
+    animation: 2s animation-70 ease;
+}
+
+@keyframes animation-70 {
+    from {
+        width: 70%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.animation-300 {
+    animation: 2s animation-300 ease;
+}
+
+@keyframes animation-300 {
+    from {
+        width: 300%;
+    }
+    to {
+        width: 100%;
+    }
+}
+

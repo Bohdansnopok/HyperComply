@@ -1,5 +1,5 @@
 header {
-    background: #273720;
+    background: #345335;
     padding: 40px 60px;
 }
 
@@ -39,4 +39,240 @@ header .container {
 
 .singInLink:hover {
     color: orange;
+}
+
+.mainBlock {
+    min-height: 100vh;
+    padding-top: 160px;
+    padding-left: 60px;
+    padding-bottom: 160px;
+    background: #273720;
+    color: white;
+}
+
+.mainBlock__subtitle {
+    margin: 25px 0;
+}
+
+.mainBlock__right {
+    margin-left: auto;
+}
+
+.sponsors {
+    background: #273720;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.sponsors .container {
+    align-items: center;
+}
+
+.sponsors__textContent {
+    margin-right: auto;
+}
+
+.sponsorsLogo {
+    align-items: center;
+    margin-left: auto;
+}
+
+.sponsor {
+    margin-left: 40px;
+}
+
+.closeDeals {
+    padding-top: 125px;
+}
+
+.closeDeals__topSubtitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.closeDeals__title {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.closeDeals__bottomSubtitle {
+    text-align: center;
+}
+
+.closeDeals__btn {
+    margin-top: 15px;
+}
+
+
+.closeDeals__content {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textElement:nth-child(1) {
+    border-top: 1px solid #273720;
+}
+
+.textElement {
+    font-size: 30px;
+    border-bottom: #273720 1px solid;
+    max-width: 470px;
+    padding: 25px 0;
+}
+
+.vendorReviews {
+    padding-top: 250px;
+    padding-bottom: 160px;
+    position: relative;
+}
+
+.vendorReviews__topSubtitle {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.vendorReviews__title {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.vendorReviews__bottomSubtitle {
+    position: relative;
+    text-align: center;
+    z-index: 50;
+}
+
+.vendorReviews__btn {
+    margin-top: 15px;
+}
+
+.vendorReviews__content {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vendorReviews .decoration {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 203px;
+}
+
+.vendorReviewsImg {
+    position: relative;
+    z-index: 6;
+}
+
+.teams {
+    background: #273720;
+    padding: 120px 0;
+}
+
+.teams__title {
+    color: white;
+    text-align: center;
+}
+
+.teams__swiper {
+    width: 100%;
+    height: 100%;
+    padding: 55px 200px;
+}
+
+.teams__swiperWrapper {
+    background: #D2EBD5;
+    padding: 45px 80px;
+    border-radius: 40px;
+}
+
+.logo {
+    justify-content: center;
+}
+
+.teams__swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teams__swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teams__textContent {
+    text-align: center;
+    font-size: 28px;
+}
+
+.teams .people {
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.teams .people .icon {
+    margin-right: 25px;
+}
+
+.securityReviews {
+    background: #273720;
+    padding: 120px 0;
+    position: relative;
+}
+
+.securityReviews__title {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.securityReviews .decoration {
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+}
+
+footer {
+    background: #273720;
+    padding: 125px 0;
+}
+
+footer .container {
+    justify-content: space-between;
+    color: white;
+}
+
+.nav__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.navs .nav {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    text-decoration: none;
+    color: white;
+    transition: color .5s;
+}
+
+.navs .nav:hover {
+    color: orange;
+}
+
+.footer .socials {
+    margin-top: 25px;
+}
+
+.footer .social ~ .social {
+    margin-left: 40px;
 }
