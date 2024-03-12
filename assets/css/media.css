@@ -23,6 +23,15 @@
     .sponsors {
         display: none;
     }
+
+    .closeDeals__content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .closeDealsLeft {
+        margin-bottom: 25px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -67,7 +76,9 @@
         font-size: 50px;
     }
 
-    .mainBlock__subtitle {
+    .mainBlock__subtitle,
+    .closeDeals__topSubtitle,
+    .closeDeals__bottomSubtitle {
         font-size: 13px;
     }
 }
@@ -85,6 +96,16 @@
     .singInLink {
         display: none;
     }
+
+    .closeDeals__content .textElement {
+        font-size: 20px;
+        max-width: 370px;
+    }
+
+    .closeDealsRight img {
+        width: 300px;
+        height: 330px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -95,10 +116,11 @@
 
     h1,
     .h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
-    .mainBlock__subtitle {
+    .mainBlock__subtitle,
+    .closeDeals__bottomSubtitle {
         font-size: 10px;
     }
 }
