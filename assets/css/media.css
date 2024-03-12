@@ -38,6 +38,16 @@
     .vendorReviews .decoration {
         display: none;
     }
+
+    .teams__textContent {
+        font-size: 15px;
+    }
+
+
+    .teams .people {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 950px) {
@@ -64,6 +74,24 @@
         width: 225px;
         padding: 75px 20px 20px 20px;
         transition: transform .5s;
+    }
+
+    .teams {
+        padding: 120px 20px;
+    }
+
+    .teams__swiper {
+        padding: 80px 0;
+    }
+
+    .teams .peopleInfo {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .teams__textContent {
+        font-size: 12px;
     }
 }
 
@@ -93,6 +121,10 @@
     .closeDeals img,
     .vendorReviews img {
         width: 100%;
+    }
+
+    .teams__swiper {
+        padding: 0;
     }
 }
 
