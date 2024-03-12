@@ -24,13 +24,19 @@
         display: none;
     }
 
-    .closeDeals__content {
+    .closeDeals__content,
+    .vendorReviews__content {
         flex-wrap: wrap;
         flex-direction: column;
     }
 
-    .closeDealsLeft {
+    .closeDealsLeft,
+    .vendorReviewsLeft {
         margin-bottom: 25px;
+    }
+
+    .vendorReviews .decoration {
+        display: none;
     }
 }
 
@@ -78,8 +84,15 @@
 
     .mainBlock__subtitle,
     .closeDeals__topSubtitle,
-    .closeDeals__bottomSubtitle {
+    .closeDeals__bottomSubtitle,
+    .vendorReviews__topSubtitle,
+    .vendorReviews__bottomSubtitle {
         font-size: 13px;
+    }
+
+    .closeDeals img,
+    .vendorReviews img {
+        width: 100%;
     }
 }
 
@@ -97,14 +110,10 @@
         display: none;
     }
 
-    .closeDeals__content .textElement {
+    .closeDeals__content .textElement,
+    .vendorReviews .textElement {
         font-size: 20px;
         max-width: 370px;
-    }
-
-    .closeDealsRight img {
-        width: 300px;
-        height: 330px;
     }
 }
 
@@ -120,7 +129,9 @@
     }
 
     .mainBlock__subtitle,
-    .closeDeals__bottomSubtitle {
+    .closeDeals__bottomSubtitle,
+    .vendorReviews__topSubtitle,
+    .vendorReviews__bottomSubtitle {
         font-size: 10px;
     }
 }
