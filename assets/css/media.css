@@ -1,3 +1,30 @@
+@media (max-width: 1024px) {
+    .mainBlock__right {
+        display: none;
+    }
+
+    .mainBlock__title,
+    .mainBlock__subtitle {
+        text-align: center;
+    }
+
+    .mainBlock {
+        padding-left: 0;
+    }
+
+    .mainBlock__left {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .sponsors {
+        display: none;
+    }
+}
+
 @media (max-width: 950px) {
     header .container {
         display: flex;
@@ -34,6 +61,15 @@
     .singInLink {
         font-size: 10px;
     }
+
+    h1,
+    .h1 {
+        font-size: 50px;
+    }
+
+    .mainBlock__subtitle {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -55,5 +91,14 @@
     .btn {
         font-size: 7px;
         padding: 7px 13px;
+    }
+
+    h1,
+    .h1 {
+        font-size: 40px;
+    }
+
+    .mainBlock__subtitle {
+        font-size: 10px;
     }
 }
