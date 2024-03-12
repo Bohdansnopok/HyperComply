@@ -8,25 +8,85 @@ header .container {
     align-items: center;
 }
 
+.burger-wrapper {
+    display: none;
+}
+
+.header-burger {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+}
+
+.header-burger span {
+    position: absolute;
+    height: 2px;
+    background: white;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.header-burger span:nth-child(1) {
+    transform: translateY(-10px);
+    width: 48px;
+}
+
+.header-burger span:nth-child(2) {
+    width: 41px;
+}
+
+.header-burger span:nth-child(3) {
+    transform: translateY(10px);
+    width: 54px;
+}
+
+.header.open .header-burger span:nth-child(1) {
+    width: 30px;
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header-burger span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header-burger span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+    width: 30px;
+}
+
+.header.open .header-burger span {
+    background-color: white;
+}
+
 .header__nav__item {
     list-style: none;
     margin-right: 45px;
     font-size: 16px;
 }
 
-.header__nav__item__link {
+.header__nav__item__link,
+.singInLink__adaptive {
     color: white;
     text-decoration: none;
     transition: color .5s;
 }
 
-.header__nav__item__link:hover {
+.header__nav__item__link:hover,
+.singInLink__adaptive:hover {
     color: orange;
 }
 
 .header__buttons {
     align-items: center;
     margin-left: 85px;
+}
+
+.singInLink__adaptive {
+    display: none;
 }
 
 .singInLink {

@@ -16,8 +16,17 @@
     <title>HyperComply</title>
 </head>
 <body>
+<script src="assets/js/main.js"></script>
 <header class="header animation-300">
     <div class="container flex">
+        <div class="burger-wrapper">
+            <button class="header-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
         <ul class="header__nav__items flex">
             <li class="header__nav__item">
                 <a href="#" class="header__nav__item__link">Product</a>
@@ -33,6 +42,10 @@
 
             <li class="header__nav__item">
                 <a href="#" class="header__nav__item__link">Learn More</a>
+            </li>
+
+            <li class="header__nav__item">
+                <a href="#" class="singInLink__adaptive">Sign In</a>
             </li>
         </ul>
 
@@ -238,6 +251,5 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="assets/js/main.js"></script>
 </body>
 </html>
