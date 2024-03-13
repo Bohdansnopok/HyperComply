@@ -181,12 +181,6 @@ header .container {
     box-shadow: 0 12px 27px 0 #0000001A;
 }
 
-.closeDealsRight__subtitle {
-    position: absolute;
-    left: 115px;
-    bottom: 135px;
-}
-
 .closeDeals__single-chart {
     min-width: 280px;
 }
@@ -204,7 +198,7 @@ header .container {
 
 .closeDeals__single-chart {
     width: 33%;
-    justify-content: space-around ;
+    justify-content: space-around;
 }
 
 .closeDeals__circular-chart {
@@ -248,7 +242,9 @@ header .container {
 .closeDealsRight__subtitle {
     font-size: 13px;
     text-align: center;
-
+    transform: translateY(calc(100% - 130px)) translateX(-50%);
+    position: absolute;
+    left: 50%;
 }
 
 .vendorReviews {
