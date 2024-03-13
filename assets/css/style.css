@@ -85,7 +85,7 @@ header .container {
     margin-left: 85px;
 }
 
-.singInLink__adaptive {
+.header__nav__item:last-child {
     display: none;
 }
 
@@ -170,6 +170,27 @@ header .container {
     justify-content: space-between;
 }
 
+.closeDealsRight {
+    position: relative;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    width: 352px;
+    height: 384px;
+    justify-content: center;
+    box-shadow: 0 12px 27px 0 #0000001A;
+}
+
+.closeDealsRight__subtitle {
+    position: absolute;
+    left: 115px;
+    bottom: 135px;
+}
+
+.closeDeals__single-chart {
+    min-width: 280px;
+}
+
 .textElement:nth-child(1) {
     border-top: 1px solid #273720;
 }
@@ -179,6 +200,55 @@ header .container {
     border-bottom: #273720 1px solid;
     max-width: 470px;
     padding: 25px 0;
+}
+
+.closeDeals__single-chart {
+    width: 33%;
+    justify-content: space-around ;
+}
+
+.closeDeals__circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.closeDeals__circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.closeDeals__circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.closeDeals__circular-chart.orange .closeDeals__circle {
+    stroke: yellow;
+}
+
+.closeDeals__percentage {
+    position: relative;
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+
+.closeDealsRight__subtitle {
+    font-size: 13px;
+    text-align: center;
+
 }
 
 .vendorReviews {

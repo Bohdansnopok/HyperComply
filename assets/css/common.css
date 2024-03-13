@@ -9,6 +9,14 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.site-wrapper {
+    overflow: hidden;
+}
+
+button {
+    list-style: none;
+}
+
 .container {
     width: 100%;
     max-width: 1080px;
@@ -28,6 +36,7 @@ h1 {
 
 .flex {
     display: flex;
+    align-items: flex-start;
 }
 
 .btn {
@@ -35,7 +44,6 @@ h1 {
     color: white;
     font-size: 15px;
     padding: 15px 25px;
-    background-color: #42AE60;
     border-radius: 6px;
     text-decoration: none;
     transition: background .5s;
@@ -45,10 +53,14 @@ h1 {
     background: red;
 }
 
+.green-button {
+    background-color: #42AE60;
+}
+
 .btnCenter {
     display: flex;
     justify-content: center;
-    margin-bottom: 75px;
+    margin-bottom: 25px;
 }
 
 .animation-70 {

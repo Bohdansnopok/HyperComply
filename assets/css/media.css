@@ -64,20 +64,22 @@
         transform: translateX(100%);
     }
 
+
     .header__nav__items {
         z-index: 1;
         display: block;
-        position: absolute;
+        position: fixed;
         left: -225px;
         top: 0;
         background: #7d8f84;
         width: 225px;
+        height: 100%;
         padding: 75px 20px 20px 20px;
         transition: transform .5s;
     }
 
-    .teams {
-        padding: 120px 20px;
+    .header-burger {
+        margin: 0 0 0 300%;
     }
 
     .teams__swiper {
@@ -86,6 +88,31 @@
 
     .teams .peopleInfo {
         font-size: 10px;
+    }
+
+    .mainBlock {
+        padding-bottom: 100px;
+    }
+
+    .closeDeals {
+        padding-top: 80px;
+    }
+
+    .vendorReviews {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    .teams {
+        padding: 60px 0 20px 20px;
+    }
+
+    .securityReviews {
+        padding: 50px 0;
+    }
+
+    .footer {
+        padding: 60px 0;
     }
 }
 
@@ -118,7 +145,6 @@
         font-size: 13px;
     }
 
-    .closeDeals img,
     .vendorReviews img {
         width: 100%;
     }
