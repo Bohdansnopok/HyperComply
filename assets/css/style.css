@@ -12,9 +12,9 @@ header {
     z-index: 999;
 }
 
-header .container {
-    justify-content: flex-end;
+.header .container {
     align-items: center;
+    justify-content: flex-end;
 }
 
 .burger-wrapper {
@@ -75,6 +75,10 @@ header .container {
     list-style: none;
     margin-right: 45px;
     font-size: 16px;
+}
+
+.singInLink__adaptive {
+    display: none;
 }
 
 .header__nav__item__link,
@@ -219,7 +223,6 @@ header .container {
 
 .closeDeals__circle-bg {
     fill: none;
-    stroke: #eee;
     stroke-width: 3.8;
 }
 
@@ -242,7 +245,6 @@ header .container {
 
 .closeDeals__percentage {
     position: relative;
-    fill: #666;
     font-family: sans-serif;
     font-size: 0.5em;
     text-anchor: middle;
@@ -251,7 +253,7 @@ header .container {
 .closeDealsRight__subtitle {
     font-size: 13px;
     text-align: center;
-    transform: translateY(calc(100% - 130px)) translateX(-50%);
+    transform: translateY(calc(50% - 110px)) translateX(-50%);
     position: absolute;
     left: 50%;
 }
