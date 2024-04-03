@@ -31,12 +31,12 @@
     }
 
     .header-burger {
-        margin: 0 0 0 300%;
+        margin: 0;
         transition: margin .5s;
     }
 
     .burger-position {
-        margin: 0;
+        margin: 0 0 0 300%;
         transition: margin .5s;
     }
 
@@ -219,7 +219,7 @@
 }
 
 @media (max-width: 425px) {
-    .singInLink__adaptive {
+    .header__nav__item:last-child {
         display: block;
     }
 

@@ -16,9 +16,8 @@
     <title>HyperComply</title>
 </head>
 <body>
-<script src="assets/js/main.js"></script>
 <div class="site-wrapper">
-    <header class="header open animation-300">
+    <header class="header animation-300">
         <div class="container flex">
             <div class="burger-wrapper">
                 <button class="header-burger" id="burger">
@@ -46,7 +45,9 @@
                 </li>
 
                 <li class="header__nav__item">
-                    <a href="#" class="singInLink__adaptive">Sign In</a>
+                    <a href="#" class="header__nav__item__link singInLink__adaptive">
+                        Sing In
+                    </a>
                 </li>
             </ul>
 
@@ -81,16 +82,16 @@
     </div>
 
     <div class="sponsors animation-300">
-        <div class="container flex">
+        <div class="container flex ">
             <div class="sponsors__textContent">
                 We've saved 10,000+ hours <br>
                 for the smartest businesses <br>
                 in the world. <br>
             </div>
             <div class="sponsorsLogo flex">
-                <img src="assets/img/viduard.svg" alt="" class="sponsor">
-                <img src="assets/img/heap.svg" alt="" class="sponsor">
-                <img src="assets/img/alloy.svg" alt="" class="sponsor">
+                <img src="assets/img/viduard.svg" alt="" class="sponsor ">
+                <img src="assets/img/heap.svg" alt="" class="sponsor ">
+                <img src="assets/img/alloy.svg" alt="" class="sponsor ">
                 <img src="assets/img/fullstory.svg" alt="" class="sponsor">
                 <img src="assets/img/salesloft.svg" alt="" class="sponsor">
                 <img src="assets/img/drata.svg" alt="" class="sponsor">
@@ -134,20 +135,22 @@
                                   stroke-dasharray="91, 100"
                                   d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
-          a 15.9155 15.9155 0 0 1 0 -31.831"
-                            />
-                            <text x="18" y="20.35" class="closeDeals__percentage">
-                                91%
-                                <div class="closeDealsRight__subtitle">
-                                    of you questionnaire <br>
-                                    has been autofilled
-                                </div>
+          a 15.9155 15.9155 0 0 1 0 -31.831"/>
+
+                            <text data-digits-counter x="18" y="20.35" class="closeDeals__percentage"
+                                  id="closeDeals__percentage">91%
                             </text>
                         </svg>
+
+                        <div class="closeDealsRight__subtitle">
+                            of you questionnaire <br>
+                            has been autofilled
+                        </div>
+                        <form action="index.html#closeDeals__percentage" class="closeDeals__percentage__form">
+                            <label for="closeDeals__percentage__input"></label>
+                            <input type="text" id="closeDeals__percentage__input" class="closeDeals__percentage__input">
+                        </form>
                     </div>
-                    <!--
-                                        <img src="assets/img/percentImg.png" alt="">
-                    -->
                 </div>
             </div>
         </div>
@@ -278,7 +281,8 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

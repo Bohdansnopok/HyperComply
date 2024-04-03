@@ -6,7 +6,7 @@ header {
 .header {
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
     text-align: center;
     color: #fff;
     z-index: 999;
@@ -77,7 +77,7 @@ header {
     font-size: 16px;
 }
 
-.singInLink__adaptive {
+.header__nav__item:last-child {
     display: none;
 }
 
@@ -122,13 +122,59 @@ header {
     background: #273720;
     color: white;
 }
+/*
+.mainBlock__title {
+    transform: translate(0px, 75%);
+    opacity: 0;
+    transition: all 1.5s ease 0s;
+}
+
+.mainBlock__title.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}*/
 
 .mainBlock__subtitle {
     margin: 25px 0;
+    /*transform: translate(0px, 50%);
+    opacity: 0;
+    transition: all 1.5s ease 0s;*/
 }
+
+/*.mainBlock__subtitle.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 1.5s ease 0.4s;
+}*/
+
+/*
+.mainBlock__btnCenter {
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all 1.5s ease 0s;
+}
+
+.mainBlock__btnCenter.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 1.5s ease 0.1s;
+}
+*/
 
 .mainBlock__right {
     margin-left: auto;
+}
+
+.anim-show {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 2.5s ease 0s;
+}
+
+.anim-show.active,
+.active .anim-show{
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .sponsors {
@@ -192,6 +238,10 @@ header {
     height: 384px;
     justify-content: center;
     box-shadow: 0 12px 27px 0 #0000001A;
+}
+
+.closeDealsRight.testClass {
+    display: none;
 }
 
 .closeDeals__single-chart {
@@ -258,6 +308,25 @@ header {
     left: 50%;
 }
 
+.closeDeals__percentage.click_none {
+    display: none;
+}
+
+.closeDeals__percentage__form {
+    display: none;
+    transform: translateY(calc(50% - 145px)) translateX(-50%);
+    position: absolute;
+    left: 50%;
+}
+
+.closeDeals__percentage__form.click {
+   display: block;
+}
+
+.closeDeals__percentage__input {
+    height: 30px;
+}
+
 .vendorReviews {
     padding-top: 250px;
     padding-bottom: 160px;
@@ -270,9 +339,15 @@ header {
 }
 
 .vendorReviews__title {
+    position: relative;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 25px;
+    z-index: 50;
+}
+
+.none {
+
 }
 
 .vendorReviews__bottomSubtitle {
