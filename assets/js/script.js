@@ -109,12 +109,23 @@ function windowLoad() {
             event.preventDefault()
             digitsCounter.classList.remove('click_none');
             digitsCounterSub.classList.remove('click');
+            if (closeDealsInput.value === '') {
+                digitsCounter.innerHTML = 91 + '%';
+            }
         })
+
 
         closeDealsInput.addEventListener('blur', function () {
             digitsCounter.classList.remove('click_none');
             digitsCounterSub.classList.remove('click');
         })
+
+        document.addEventListener('keydown', function (e) {
+            if (e.keyCode === 27) {
+                digitsCounter.classList.remove('click_none');
+                digitsCounterSub.classList.remove('click');
+            }
+        });
 
         console.log(digitsCounter)
         let startTimestamp = null;

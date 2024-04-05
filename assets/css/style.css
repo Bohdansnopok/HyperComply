@@ -296,8 +296,8 @@ header {
 .closeDeals__percentage {
     position: relative;
     font-family: sans-serif;
-    font-size: 0.5em;
     text-anchor: middle;
+    font-size: 8px;
 }
 
 .closeDealsRight__subtitle {
@@ -314,7 +314,7 @@ header {
 
 .closeDeals__percentage__form {
     display: none;
-    transform: translateY(calc(50% - 145px)) translateX(-50%);
+    transform: translateY(calc(50% - 190px)) translateX(-50%);
     position: absolute;
     left: 50%;
 }
@@ -324,7 +324,10 @@ header {
 }
 
 .closeDeals__percentage__input {
-    height: 30px;
+    text-align: center;
+    font-size: 50px;
+    width: 90px;
+    padding: 15px;
 }
 
 .vendorReviews {
