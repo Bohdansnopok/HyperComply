@@ -94,7 +94,7 @@ function windowLoad() {
         // })
         digitsCounter.addEventListener('click', function () {
             digitsCounter.classList.add('click_none');
-            digitsCounterSub.classList.add('click');
+            digitsCounterSub.classList.add('click_none');
         })
 
         // document.addEventListener("keydown", function (event) {
@@ -102,7 +102,6 @@ function windowLoad() {
         //
         //     }
         // })
-
 
         closeDealsForm.addEventListener('submit', function (event) {
             digitsCounter.innerHTML = closeDealsInput.value + '%';

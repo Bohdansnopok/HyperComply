@@ -285,7 +285,7 @@ header {
 
 @keyframes progress {
     0% {
-        stroke-dasharray: 0 100;
+        stroke-dasharray: 0, 100;
     }
 }
 
@@ -314,7 +314,7 @@ header {
 
 .closeDeals__percentage__form {
     display: none;
-    transform: translateY(calc(50% - 190px)) translateX(-50%);
+    transform: translateY(calc(50% - 235px)) translateX(-50%);
     position: absolute;
     left: 50%;
 }
