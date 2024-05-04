@@ -216,6 +216,11 @@
     .securityReviews .decoration {
         display: none;
     }
+
+    .closeDealsRight {
+        padding: 50px 20px;
+
+    }
 }
 
 @media (max-width: 425px) {
@@ -255,5 +260,11 @@
     .vendorReviews__topSubtitle,
     .vendorReviews__bottomSubtitle {
         font-size: 10px;
+    }
+
+
+    .closeDealsRight {
+        padding: 40px 10px;
+
     }
 }

@@ -1,41 +1,40 @@
 "use strict"
-// const animItems = document.querySelectorAll('.anim-items');
-// if (animItems.length > 0) {
-//     window.addEventListener('scroll', animOnScroll);
-//
-//     function animOnScroll(params) {
-//         for (let index = 0; index < animItems.length; index++) {
-//             const animItem = animItems[index];
-//             const animItemHeight = animItem.offsetHeight;
-//             const animItemOffset = offset(animItem).top;
-//             const animStart = 4;
-//
-//             let animItemPoint = window.innerHeight - animItemHeight / animStart;
-//             if (animItemHeight > window.innerHeight) {
-//                 animItemPoint = window.innerHeight - animItemHeight / animStart;
-//             }
-//
-//             if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-//                 animItem.classList.add('active');
-//             } else {
-//                 if (!animItem.classList.contains(anim - no - hide)) {
-//                     animItem.classList.remove('active');
-//                 }
-//             }
-//         }
-//     }
-//
-//     function offset(el) {
-//         const rect = el.getBoundingClientRect(),
-//             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-//             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//         return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
-//     }
-//
-//     setTimeout(() => {
-//         animOnScroll()
-//     }, 300);
-// }
+const animItems = document.querySelectorAll('.anim-items');
+
+if (animItems.length > 0) {
+    window.addEventListener('scroll', animOnScroll);
+
+    function animOnScroll(params) {
+        for (let index = 0; index < animItems.length; index++) {
+            const animItem = animItems[index];
+            const animItemHeight = animItem.offsetHeight;
+            const animItemOffset = offset(animItem).top;
+            const animStart = 4;
+
+            let animItemPoint = window.innerHeight - animItemHeight / animStart;
+            if (animItemHeight > window.innerHeight) {
+                animItemPoint = window.innerHeight - window.innerHeight / animStart;
+            }
+
+            if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+                animItem.classList.add('active');
+            } else {
+                animItem.classList.remove('active');
+            }
+        }
+    }
+
+    function offset(el) {
+        const rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
+    }
+
+    setTimeout(() => {
+        animOnScroll();
+    }, 20);
+}
 
 document.getElementById('burger').addEventListener('click', function () {
     document.querySelector('header').classList.toggle('open')
@@ -83,7 +82,8 @@ function windowLoad() {
 
     function digitsCountersAnimate(digitsCounterContainer) {
         let digitsCounter = digitsCounterContainer.querySelector('[data-digits-counter]')
-        let digitsCounterSub = document.querySelector('.closeDeals__percentage__form')
+        // let value = digitsCounterContainer.querySelector('[stroke-dasharray]');
+        let circle = document.querySelector('.closeDeals__circle');
         let closeDealsInput = document.querySelector('.closeDeals__percentage__input')
         let closeDealsForm = document.querySelector('.closeDeals__percentage__form')
         // let digitsCounterAll = digitsCounterContainer.querySelectorAll('*')
@@ -92,10 +92,7 @@ function windowLoad() {
         //         console.log('click2');
         //     })
         // })
-        digitsCounter.addEventListener('click', function () {
-            digitsCounter.classList.add('click_none');
-            digitsCounterSub.classList.add('click_none');
-        })
+
 
         // document.addEventListener("keydown", function (event) {
         //     if (event.code === 'KeyEnter') {
@@ -103,26 +100,52 @@ function windowLoad() {
         //     }
         // })
 
+        digitsCounter.addEventListener('click', function () {
+            digitsCounter.classList.add('click_none');
+            closeDealsForm.classList.add('click');
+            document.getElementById('closeDeals__percentage__input').focus()
+            closeDealsInput.value = '';
+
+        })
+
         closeDealsForm.addEventListener('submit', function (event) {
-            digitsCounter.innerHTML = closeDealsInput.value + '%';
+            digitsCounter.innerHTML = closeDealsInput.value + '%'
+            circle.setAttribute("stroke-dasharray", closeDealsInput.value + ',100')
             event.preventDefault()
             digitsCounter.classList.remove('click_none');
-            digitsCounterSub.classList.remove('click');
+            closeDealsForm.classList.remove('click');
+            document.getElementById('closeDeals__percentage__input').focus()
+
             if (closeDealsInput.value === '') {
                 digitsCounter.innerHTML = 91 + '%';
             }
         })
 
 
+        // if (closeDealsForm === onsubmit) {
+        //
+        // }
+
         closeDealsInput.addEventListener('blur', function () {
             digitsCounter.classList.remove('click_none');
-            digitsCounterSub.classList.remove('click');
+            closeDealsForm.classList.remove('click');
+            document.getElementById('closeDeals__percentage__input').focus()
+
         })
 
         document.addEventListener('keydown', function (e) {
             if (e.keyCode === 27) {
                 digitsCounter.classList.remove('click_none');
-                digitsCounterSub.classList.remove('click');
+                closeDealsForm.classList.remove('click');
+                document.getElementById('closeDeals__percentage__input').focus()
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.keyCode === 13) {
+                if (closeDealsInput.value > 100) {
+                    closeDealsInput.value = 100;
+                }
             }
         });
 

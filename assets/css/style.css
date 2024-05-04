@@ -1,3 +1,5 @@
+
+
 header {
     background: #345335;
     padding: 40px 60px;
@@ -118,48 +120,20 @@ header {
     min-height: 100vh;
     padding-top: 260px;
     padding-left: 60px;
-    padding-bottom: 160px;
+    padding-bottom: 60px;
     background: #273720;
     color: white;
 }
-/*
-.mainBlock__title {
-    transform: translate(0px, 75%);
-    opacity: 0;
-    transition: all 1.5s ease 0s;
-}
-
-.mainBlock__title.active {
-    transform: translate(0px, 0px);
-    opacity: 1;
-}*/
 
 .mainBlock__subtitle {
     margin: 25px 0;
-    /*transform: translate(0px, 50%);
-    opacity: 0;
-    transition: all 1.5s ease 0s;*/
 }
 
-/*.mainBlock__subtitle.active {
-    transform: translate(0px, 0px);
-    opacity: 1;
-    transition: all 1.5s ease 0.4s;
-}*/
-
-/*
 .mainBlock__btnCenter {
     transform: translate(120%, 0px);
     opacity: 0;
     transition: all 1.5s ease 0s;
 }
-
-.mainBlock__btnCenter.active {
-    transform: translate(0px, 0px);
-    opacity: 1;
-    transition: all 1.5s ease 0.1s;
-}
-*/
 
 .mainBlock__right {
     margin-left: auto;
@@ -168,7 +142,7 @@ header {
 .anim-show {
     transform: translate(0px, 120%);
     opacity: 0;
-    transition: all 2.5s ease 0s;
+    transition: all 1.5s ease 0s;
 }
 
 .anim-show.active,
@@ -180,11 +154,11 @@ header {
 .sponsors {
     background: #273720;
     color: white;
-    padding-bottom: 60px;
 }
 
 .sponsors .container {
     align-items: center;
+
 }
 
 .sponsors__textContent {
@@ -234,8 +208,7 @@ header {
     align-items: center;
     background: #ffffff;
     border-radius: 10px;
-    width: 352px;
-    height: 384px;
+    padding: 70px 40px;
     justify-content: center;
     box-shadow: 0 12px 27px 0 #0000001A;
 }
@@ -314,7 +287,7 @@ header {
 
 .closeDeals__percentage__form {
     display: none;
-    transform: translateY(calc(50% - 235px)) translateX(-50%);
+    transform: translateY(calc(50% - 200px)) translateX(-50%);
     position: absolute;
     left: 50%;
 }
@@ -325,7 +298,7 @@ header {
 
 .closeDeals__percentage__input {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     width: 90px;
     padding: 15px;
 }
