@@ -108,6 +108,29 @@ function windowLoad() {
 
         })
 
+        document.getElementById("closeDeals__percentage__input").addEventListener("keypress", function (event) {
+            if (isNaN(String.fromCharCode(event.keyCode))) {
+                event.preventDefault();
+            }
+        });
+
+        closeDealsInput.addEventListener('input', function () {
+            // Отримуємо введене значення з поля вводу
+            var inputValue = closeDealsInput.value;
+
+            // Перевіряємо, чи введене значення більше 100
+            if (parseInt(inputValue) > 100) {
+                // Якщо так, то встановлюємо вміст поля вводу як порожній рядок
+                closeDealsInput.value = '';
+            }
+            if (parseInt(inputValue) < 1) {
+                // Якщо так, то встановлюємо вміст поля вводу як порожній рядок
+                closeDealsInput.value = '';
+            }
+        });
+
+
+
         closeDealsForm.addEventListener('submit', function (event) {
             digitsCounter.innerHTML = closeDealsInput.value + '%'
             circle.setAttribute("stroke-dasharray", closeDealsInput.value + ',100')
@@ -115,11 +138,9 @@ function windowLoad() {
             digitsCounter.classList.remove('click_none');
             closeDealsForm.classList.remove('click');
             document.getElementById('closeDeals__percentage__input').focus()
-
-            if (closeDealsInput.value === '') {
-                digitsCounter.innerHTML = 91 + '%';
-            }
         })
+
+
 
 
         // if (closeDealsForm === onsubmit) {
